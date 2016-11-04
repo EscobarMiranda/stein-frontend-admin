@@ -1,0 +1,70 @@
+@blue: #428bca; 
+@loginComponentsWidth: 20em;
+@full: 100%;
+@brand-primary: #E8E9E9;
+
+.login-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  background: @brand-primary;
+  text-align: center;
+  color: #fff;
+  padding: 3em;
+  h1 {
+    font-weight: 300;
+    small {
+      color: rgba(255,255,255,0.7);
+    }
+  }
+
+  .form-group {
+    padding: 8px 0;
+  }
+
+  .form-content {
+    padding: 40px 0;
+  }
+
+  .logo-login {
+    padding-top: 10em;
+    height: 15em;
+    width: auto;
+  }
+
+  .btn-outline {
+    background: 0 0;
+    box-shadow: 0 0 0 2px #013681 inset;
+    color: #013681;
+  }
+
+}
+
+.input-underline {
+  /* !important to override bootstrap styles */
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-bottom: 2px solid #013681 !important;
+  color: #013681 !important;
+  border-radius: 0 !important;
+
+  &::-moz-placeholder {
+    color: #013681 !important;
+  }
+  &::-ms-input-placeholder {
+    color: #013681 !important;
+  }
+  &::-webkit-input-placeholder {
+    color: #013681 !important;
+  }
+
+  &:focus {
+    border-bottom: 2px solid #013681 !important;
+    box-shadow: none !important;
+  }
+
+}
